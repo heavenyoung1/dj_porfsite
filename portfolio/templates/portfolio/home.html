@@ -2,11 +2,19 @@
 
 {% block content %}
 
-   <h1>HELLO WORLD!</h1>
+{% load static %}
+<head>
+      <link rel="stylesheet" href="{% static 'portfolio/css.css' %}">
+</head>
 
-    {% load static %}
+
+
+   <img src="{% static 'portfolio/square_main_photo.jpg' %}" class="main-photo">
+   <h1 class="head-title">This web-site own supreme commander-in-chief - Eugene Mefyod</h1>
+
+
     <a href="{% static 'portfolio/resume.pdf' %}" >Resume</a>
-    <img src="{% static 'portfolio/square_main_photo.jpg' %}">
+
     <a href="{% url 'blog:all_blogs' %}">LINK BLOG</a>
 
     {% for project in projects %}
