@@ -21,7 +21,7 @@
 
     <h2>{{ project.title }}</h2>
     <p>{{ project.description }}</p>
-    <img src='{{ project.image.url }}'>
+    <img class="blog_picture" src='{{ project.image.url }}'>
     {% if project.url %}
     <br><a href = "{{ project.url }}">link</a>
     {% endif %}
