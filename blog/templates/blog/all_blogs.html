@@ -1,11 +1,17 @@
 {% extends 'portfolio/base.html' %}
 
 {% block content %}
-
+<h1 class="head-title">Eugene Mefyod have writed 1 blog</h1>
 {% for blog in blogs %}
-<a href={% url 'blog:detail' blog.id %}><h2>{{ blog.title }}</h2></a>
-<p>{{ blog.description|safe|truncatechars:100  }}</p>
-<p>{{ blog.datetime|date:'M d Y'|upper}}</p>
+<div class="all-blogs-container">
+    <div class="all-blogs-one">
+        <a href={% url 'blog:detail' blog.id %}><h2 class="blog-title">{{ blog.title }}</h2></a>
+            <p class="datetime">{{ blog.datetime|date:'M d Y'|upper}}</p>
+                <p class="blog-description">{{ blog.description|safe|truncatechars:100  }}</p>
+
+
+    </div>
+</div>
 
 
 {% endfor %}
