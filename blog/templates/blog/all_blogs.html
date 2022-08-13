@@ -1,7 +1,7 @@
 {% extends 'portfolio/base.html' %}
 
 {% block content %}
-<h1 class="head-title">Eugene Mefyod have writed 1 blog</h1>
+<h1 class="head-title">Eugene Mefyod have writed {{ blogs.count }} blog</h1>
 {% for blog in blogs %}
 <div class="all-blogs-container">
     <div class="all-blogs-one">

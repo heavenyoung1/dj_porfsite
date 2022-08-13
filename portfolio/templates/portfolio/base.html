@@ -20,9 +20,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link link-name" aria-current="page" href="{% url 'home' %}">Eugene Mefyod</a>
-        <a class="nav-link" href="{% static 'portfolio/resume.pdf' %}" >Resume</a>
+        <a class="nav-link" href="{% static 'portfolio/resume.pdf' %}" target="_blank">Resume</a>
         <a class="nav-link" href="https://github.com/heavenyoung1" target="_blank">GitHub</a>
-        <a class="nav-link" href="#">Test</a>
+        <a class="nav-link" href="{% static 'portfolio/certificate.pdf' %}" target="_blank">Сertificate</a>
         <a class="btn btn-primary" href="{% url 'blog:all_blogs' %}">Blog</a>
       </div>
     </div>
